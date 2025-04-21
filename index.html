@@ -3,128 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vaultoo - Protect 365</title>
+  <title>Support Vaultoo</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f0f4f8;
-      color: #333;
-      margin: 0;
-      padding: 40px 80px;
+      text-align: center;
+      padding: 50px;
+      background-color: #f0f0f0;
     }
+
     h1 {
-      font-size: 2.5rem;
-      color: #0066cc;
-      text-align: center;
-    }
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto 30px;
-      text-align: center;
-    }
-    .button {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      font-size: 16px;
-      text-decoration: none;
-      color: white;
-      background: #28a745;
-      border-radius: 8px;
-    }
-    .donate-section {
-      margin-top: 50px;
-      text-align: center;
-    }
-    .qr-code {
-      margin-top: 20px;
-      width: 150px;
-      height: 150px;
+      color: #1e90ff;
     }
 
-    /* Sidebar ads */
-    .sidebar {
-      position: fixed;
-      top: 0;
-      width: 160px;
-      height: 100%;
-      background: #e6e6e6;
-      padding: 10px;
-      overflow: auto;
+    .qr-container {
+      margin-top: 30px;
     }
 
-    .left-ad {
-      left: 0;
-    }
-
-    .right-ad {
-      right: 0;
-    }
-
-    .ad-box {
-      background: white;
+    img.qr {
+      width: 200px;
+      height: auto;
+      border: 2px solid #ccc;
       border-radius: 10px;
-      padding: 10px;
-      margin-top: 100px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
     }
 
-    .main-content {
-      margin: auto;
-      max-width: 800px;
-      position: relative;
-      z-index: 1;
+    .btn-home {
+      margin-top: 30px;
+      text-decoration: none;
+      background-color: #1e90ff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
     }
 
-    iframe {
-      max-width: 100%;
+    .btn-home:hover {
+      background-color: #187bcd;
     }
-
   </style>
 </head>
 <body>
+  <h1>Support Vaultoo</h1>
+  <p>Thank you for considering a donation to help keep Vaultoo free and powerful for all users.</p>
 
-  <!-- Left Ad Box -->
-  <div class="sidebar left-ad">
-    <div class="ad-box">
-      <h4>Ad Space</h4>
-      <p><a href="#">Affiliate Link</a></p>
-      <!-- You can embed Amazon here -->
-    </div>
+  <form action="https://www.paypal.com/donate" method="post" target="_top">
+    <input type="hidden" name="hosted_button_id" value="JKCMQRLBPR83C" />
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
+      title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+    <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+  </form>
+
+  <div class="qr-container">
+    <p>Or scan to donate:</p>
+    <img class="qr" src="65af3914-61ff-4cea-8fb8-f78ec62dbd10.png" alt="QR Code for donation" />
   </div>
 
-  <!-- Right Ad Box -->
-  <div class="sidebar right-ad">
-    <div class="ad-box">
-      <h4>Promotions</h4>
-      <!-- Example YouTube embed -->
-      <iframe width="140" height="90" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <h1>Vaultoo</h1>
-    <p>Your free security dashboard to access tools like VPN, password managers, email virus scanning and more — all from one place.</p>
-
-    <a href="https://protonvpn.com" class="button" target="_blank">Free VPN</a>
-    <a href="https://bitwarden.com" class="button" target="_blank">Password Manager</a>
-    <a href="https://mailbox.org/en/" class="button" target="_blank">Email Scanner</a>
-
-    <div class="donate-section">
-      <h2>Support Vaultoo 💙</h2>
-      <form action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="hosted_button_id" value="JKCMQRLBPR83C" />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
-        <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
-      </form>
-
-      <p>Or scan to donate:</p>
-      <img src="65af3914-61ff-4cea-8fb8-f78ec62dbd10.png" alt="PayPal QR Code" class="qr-code"/>
-    </div>
-  </div>
-
+  <a href="index.html" class="btn-home">Back to Home</a>
 </body>
 </html>
