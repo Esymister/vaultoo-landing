@@ -3,93 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vaultoo Protect 365</title>
+  <title>Vaultoo - Your Free Security Hub</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(145deg, #e3f2fd, #fce4ec);
       margin: 0;
       padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: #fff;
       text-align: center;
-      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
-    header {
-      background-color: #1976d2;
-      color: white;
-      padding: 2rem;
-      font-size: 2rem;
+    h1 {
+      font-size: 3rem;
+      margin-top: 1rem;
     }
-    section {
-      padding: 2rem;
-    }
-    .tool {
-      margin: 1rem auto;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 1.5rem;
+    p {
       max-width: 500px;
-      transition: transform 0.2s;
+      margin: 1rem auto;
+      line-height: 1.6;
     }
-    .tool:hover {
-      transform: scale(1.03);
-    }
-    .tool a {
-      text-decoration: none;
-      color: #1976d2;
-      font-weight: bold;
-    }
-    .donate {
-      background-color: #ff4081;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 30px;
-      font-size: 1.2rem;
-      cursor: pointer;
+    .donation-section {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 16px;
       margin-top: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
-    .footer {
-      background-color: #eeeeee;
-      padding: 1rem;
-      font-size: 0.9rem;
+    .donation-section h2 {
+      color: #fff;
+    }
+    .qr-code {
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    Vaultoo Protect 365 🔒
-  </header>
+  <h1>Vaultoo</h1>
+  <p>Your all-in-one FREE desktop security dashboard. Access trusted tools like VPNs, password managers, virus scans, and more — all in one place!</p>
 
-  <section>
-    <div class="tool">
-      <h3>🔐 Free VPN Access</h3>
-      <a href="https://www.protonvpn.com/free-vpn" target="_blank">Launch Free VPN</a>
-    </div>
-
-    <div class="tool">
-      <h3>🔑 Password Manager</h3>
-      <a href="https://bitwarden.com" target="_blank">Go to Bitwarden</a>
-    </div>
-
-    <div class="tool">
-      <h3>📧 Email Virus Scanner</h3>
-      <a href="https://www.virustotal.com/gui/home/upload" target="_blank">Scan Email Attachments</a>
-    </div>
-
-    <div class="tool">
-      <h3>🧰 Launch Dashboard (Coming Soon)</h3>
-      <span style="color: gray;">Launching soon with more tools</span>
-    </div>
-
-    <button class="donate" onclick="alert('PayPal donation setup coming soon!')">
-      ❤️ Donate to Keep It Free
-    </button>
-  </section>
-
-  <div class="footer">
-    © 2025 Vaultoo. Built by Symister to keep you protected for free.
-  </div>
-</body>
-</html>
-
+  <div class="donation-section">
+    <h2>Support Vaultoo</h2>
+    <p>If Vaultoo helps you, consider donating to keep it free and growing!</p>
+    
+    <!-- PayPal Donate Button -->
+    <form action="https://www.paypal.com/donate" method="post" target="_top" style="margin-bottom: 1rem;">
+      <input type="hidden" name="hosted_button_id" value="JKCMQRLBPR83C" />
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
+             title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+      <img alt="" border="0" src="https://www.paypal.com/en_CA/i_
