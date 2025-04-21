@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaultoo - Your Free Security Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #5e60ce, #48bfe3);
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    .cta {
+      background: #fff;
+      color: #333;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+    section.features {
+      padding: 40px 20px;
+      background: #1d3557;
+    }
+    .feature {
+      margin: 20px auto;
+      max-width: 500px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+    }
+    form {
+      margin-top: 30px;
+    }
+    input[type="email"] {
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      width: 250px;
+      margin-right: 10px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background: #ffd60a;
+      color: #333;
+      cursor: pointer;
+    }
+    footer {
+      padding: 20px;
+      background: #14213d;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vaultoo</h1>
+    <p>Your all-in-one free security dashboard — VPN, passwords, email scanner, and more!</p>
+    <a class="cta" href="#signup">Join the Waitlist</a>
+  </header>
+
+  <section class="features">
+    <h2>Features</h2>
+    <div class="feature">
+      <h3>Free VPN Access</h3>
+      <p>Activate a secure VPN tunnel from trusted free services whenever you need it.</p>
+    </div>
+    <div class="feature">
+      <h3>Password Manager</h3>
+      <p>Access your passwords via a link to top-tier free password storage tools.</p>
+    </div>
+    <div class="feature">
+      <h3>Email Virus Scanner</h3>
+      <p>Scan your emails for threats with integrated free security platforms.</p>
+    </div>
+  </section>
+
+  <section id="signup">
+    <h2>Be the First to Know</h2>
+    <p>Sign up for updates and early access when Vaultoo launches.</p>
+    <form name="signup" method="POST" data-netlify="true">
+      <input type="email" name="email" placeholder="Your email address" required />
+      <input type="submit" value="Notify Me" />
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Vaultoo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
