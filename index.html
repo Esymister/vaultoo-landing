@@ -2,108 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vaultoo - Your Free Security Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaultoo Protect 365</title>
   <style>
     body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #e3f2fd, #fce4ec);
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #5e60ce, #48bfe3);
-      color: #fff;
+      padding: 0;
       text-align: center;
+      color: #333;
     }
     header {
-      padding: 50px 20px;
+      background-color: #1976d2;
+      color: white;
+      padding: 2rem;
+      font-size: 2rem;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+    section {
+      padding: 2rem;
     }
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto 30px;
-    }
-    .cta {
-      background: #fff;
-      color: #333;
-      padding: 15px 30px;
-      border-radius: 30px;
-      font-size: 1rem;
-      text-decoration: none;
-      display: inline-block;
-    }
-    section.features {
-      padding: 40px 20px;
-      background: #1d3557;
-    }
-    .feature {
-      margin: 20px auto;
+    .tool {
+      margin: 1rem auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
       max-width: 500px;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
+      transition: transform 0.2s;
     }
-    form {
-      margin-top: 30px;
+    .tool:hover {
+      transform: scale(1.03);
     }
-    input[type="email"] {
-      padding: 10px;
+    .tool a {
+      text-decoration: none;
+      color: #1976d2;
+      font-weight: bold;
+    }
+    .donate {
+      background-color: #ff4081;
+      color: white;
+      padding: 0.75rem 1.5rem;
       border: none;
-      border-radius: 20px;
-      width: 250px;
-      margin-right: 10px;
-    }
-    input[type="submit"] {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 20px;
-      background: #ffd60a;
-      color: #333;
+      border-radius: 30px;
+      font-size: 1.2rem;
       cursor: pointer;
+      margin-top: 2rem;
     }
-    footer {
-      padding: 20px;
-      background: #14213d;
-      color: #aaa;
+    .footer {
+      background-color: #eeeeee;
+      padding: 1rem;
       font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Vaultoo</h1>
-    <p>Your all-in-one free security dashboard — VPN, passwords, email scanner, and more!</p>
-    <a class="cta" href="#signup">Join the Waitlist</a>
+    Vaultoo Protect 365 🔒
   </header>
 
-  <section class="features">
-    <h2>Features</h2>
-    <div class="feature">
-      <h3>Free VPN Access</h3>
-      <p>Activate a secure VPN tunnel from trusted free services whenever you need it.</p>
+  <section>
+    <div class="tool">
+      <h3>🔐 Free VPN Access</h3>
+      <a href="https://www.protonvpn.com/free-vpn" target="_blank">Launch Free VPN</a>
     </div>
-    <div class="feature">
-      <h3>Password Manager</h3>
-      <p>Access your passwords via a link to top-tier free password storage tools.</p>
+
+    <div class="tool">
+      <h3>🔑 Password Manager</h3>
+      <a href="https://bitwarden.com" target="_blank">Go to Bitwarden</a>
     </div>
-    <div class="feature">
-      <h3>Email Virus Scanner</h3>
-      <p>Scan your emails for threats with integrated free security platforms.</p>
+
+    <div class="tool">
+      <h3>📧 Email Virus Scanner</h3>
+      <a href="https://www.virustotal.com/gui/home/upload" target="_blank">Scan Email Attachments</a>
     </div>
+
+    <div class="tool">
+      <h3>🧰 Launch Dashboard (Coming Soon)</h3>
+      <span style="color: gray;">Launching soon with more tools</span>
+    </div>
+
+    <button class="donate" onclick="alert('PayPal donation setup coming soon!')">
+      ❤️ Donate to Keep It Free
+    </button>
   </section>
 
-  <section id="signup">
-    <h2>Be the First to Know</h2>
-    <p>Sign up for updates and early access when Vaultoo launches.</p>
-    <form name="signup" method="POST" data-netlify="true">
-      <input type="email" name="email" placeholder="Your email address" required />
-      <input type="submit" value="Notify Me" />
-    </form>
-  </section>
-
-  <footer>
-    <p>© 2025 Vaultoo. All rights reserved.</p>
-  </footer>
+  <div class="footer">
+    © 2025 Vaultoo. Built by Symister to keep you protected for free.
+  </div>
 </body>
 </html>
+Update landing page with tools
