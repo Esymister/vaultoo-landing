@@ -2,139 +2,120 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vaultoo – Free Security Toolkit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaultoo – Protect What Matters</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0a3d62, #f9ca24);
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
       color: #fff;
-      min-height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      padding: 2rem;
     }
 
-    .wrapper {
-      background-color: #fff;
-      color: #333;
-      border-radius: 20px;
-      max-width: 1000px;
-      width: 100%;
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-      overflow: hidden;
-    }
-
-    .header {
-      background: #0a3d62;
-      padding: 2rem;
+    header {
       text-align: center;
-      color: #fff;
+      padding: 3rem 1rem 2rem;
     }
 
-    .header h1 {
-      font-size: 2.5rem;
+    header h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, #ffffff, #fceabb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    .header p {
-      font-size: 1rem;
-      margin-top: 0.5rem;
+    header p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
-    .tools {
+    .content {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 2rem;
-      gap: 1rem;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 2rem;
+      gap: 2rem;
     }
 
-    .tool-card {
-      background: #f3f6fb;
+    .ads {
+      width: 200px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
       border-radius: 10px;
-      padding: 1rem 1.5rem;
-      flex: 1 1 250px;
       text-align: center;
-      transition: transform 0.3s ease;
     }
 
-    .tool-card:hover {
-      transform: scale(1.05);
-      background-color: #fef9e7;
-    }
-
-    .tool-card a {
-      text-decoration: none;
-      font-weight: 600;
-      color: #0a3d62;
-      font-size: 1.1rem;
-      display: block;
-    }
-
-    .footer {
+    .main-box {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      max-width: 600px;
+      width: 100%;
       text-align: center;
-      padding: 1.5rem;
-      background-color: #f3f6fb;
     }
 
-    .support-button {
-      background: #f9ca24;
-      color: #0a3d62;
-      padding: 0.75rem 2rem;
+    .main-box h2 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    .donate-btn {
+      margin-top: 1.5rem;
+    }
+
+    footer {
+      margin: 3rem 0 1rem;
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+
+    iframe {
+      width: 100%;
       border: none;
-      border-radius: 30px;
-      font-size: 1rem;
-      font-weight: bold;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .support-button:hover {
-      background: #f6b93b;
-      transform: scale(1.05);
-    }
-
-    @media (max-width: 600px) {
-      .header h1 {
-        font-size: 2rem;
-      }
-
-      .tool-card {
-        flex: 1 1 100%;
-      }
+      height: 300px;
     }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="header">
-      <h1>Vaultoo</h1>
-      <p>Your free all-in-one online security toolkit</p>
+  <header>
+    <h1>Welcome to Vaultoo</h1>
+    <p>Your all-in-one dashboard for online privacy, protection, and peace of mind – absolutely free.</p>
+  </header>
+
+  <div class="content">
+    <div class="ads">
+      <p><strong>Affiliate Ad</strong></p>
+      <img src="https://via.placeholder.com/150x150" alt="Ad placeholder" style="border-radius: 10px;" />
+      <p style="font-size: 0.8rem; margin-top: 0.5rem;">Click here to support our partners</p>
     </div>
 
-    <div class="tools">
-      <div class="tool-card">
-        <a href="https://protonvpn.com/" target="_blank">🔐 ProtonVPN<br>Secure Free VPN</a>
-      </div>
-      <div class="tool-card">
-        <a href="https://www.lastpass.com/" target="_blank">🔑 LastPass<br>Password Manager</a>
-      </div>
-      <div class="tool-card">
-        <a href="https://haveibeenpwned.com/" target="_blank">📧 HaveIBeenPwned<br>Email Breach Scanner</a>
+    <div class="main-box">
+      <h2>Protect Your Digital Life</h2>
+      <p>Explore free tools like VPNs, password managers, and secure email scanners – all in one place.</p>
+
+      <div class="donate-btn">
+        <a href="donation.html">
+          <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate with PayPal button" />
+        </a>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Support Vaultoo – Every bit helps!</p>
       </div>
     </div>
 
-    <div class="footer">
-      <a href="donate.html" class="support-button">💖 Support Us</a>
+    <div class="ads">
+      <p><strong>Sponsored Content</strong></p>
+      <img src="https://via.placeholder.com/150x150" alt="Ad placeholder" style="border-radius: 10px;" />
+      <p style="font-size: 0.8rem; margin-top: 0.5rem;">Discover exclusive deals</p>
     </div>
   </div>
+
+  <footer>
+    &copy; 2025 Vaultoo. Built with love and free tools. All rights reserved.
+  </footer>
 </body>
 </html>
