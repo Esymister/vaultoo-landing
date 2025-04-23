@@ -6,118 +6,76 @@
   <title>Vaultoo - Free Security Toolkit</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #eef2f7;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f6fb;
+      color: #333;
       display: flex;
       justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
-    .wrapper {
-      max-width: 1000px;
-      width: 100%;
-      display: flex;
-      position: relative;
-    }
-
-    .ad-left,
-    .ad-right {
-      width: 120px;
-      padding: 10px;
-      background: #f9f9f9;
-      text-align: center;
-      display: none;
-    }
-
-    .main-content {
-      flex-grow: 1;
+    .container {
+      max-width: 800px;
+      width: 90%;
       background: white;
       padding: 2rem;
-      border-radius: 8px;
-      margin: 1rem auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    header {
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       text-align: center;
-      background-color: #0a3d62;
-      color: white;
-      padding: 1rem;
-      border-radius: 8px 8px 0 0;
     }
 
-    ul.tool-list {
-      list-style: none;
+    h1 {
+      color: #0a3d62;
+    }
+
+    .tool-list {
+      list-style-type: none;
       padding: 0;
+      margin: 2rem 0;
     }
 
-    ul.tool-list li {
+    .tool-list li {
       margin: 1rem 0;
     }
 
     .tool-list a {
-      color: #0a3d62;
       text-decoration: none;
+      color: #0a3d62;
       font-weight: bold;
+      font-size: 1.1rem;
     }
 
-    .donate-link {
-      display: inline-block;
+    .support-button {
       margin-top: 2rem;
       padding: 0.75rem 1.5rem;
       background-color: #0a3d62;
       color: white;
-      text-decoration: none;
+      font-size: 1rem;
+      border: none;
       border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
     }
 
-    .ad-panel img {
-      max-width: 100%;
-      margin-bottom: 1rem;
-    }
-
-    @media screen and (min-width: 1024px) {
-      .ad-left,
-      .ad-right {
-        display: block;
-      }
+    .support-button:hover {
+      background-color: #064172;
     }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="ad-left ad-panel">
-      <a href="https://www.amazon.com/s?k=cybersecurity+tools" target="_blank">
-        <img src="https://via.placeholder.com/100x250?text=Ad+1" alt="Ad 1" />
-      </a>
-    </div>
+  <div class="container">
+    <h1>Vaultoo</h1>
+    <p>Your free all-in-one online security toolkit</p>
 
-    <div class="main-content">
-      <header>
-        <h1>Vaultoo</h1>
-        <p>Your free all-in-one online security toolkit</p>
-      </header>
+    <ul class="tool-list">
+      <li><a href="https://protonvpn.com/" target="_blank">ProtonVPN – Free VPN</a></li>
+      <li><a href="https://www.lastpass.com/" target="_blank">LastPass – Password Manager</a></li>
+      <li><a href="https://haveibeenpwned.com/" target="_blank">HaveIBeenPwned – Email Breach Scanner</a></li>
+    </ul>
 
-      <main>
-        <h2 style="text-align: center;">Featured Tools</h2>
-        <ul class="tool-list">
-          <li><a href="https://protonvpn.com/" target="_blank">Free VPN – ProtonVPN</a></li>
-          <li><a href="https://www.lastpass.com/" target="_blank">Password Manager – LastPass</a></li>
-          <li><a href="https://haveibeenpwned.com/" target="_blank">Email Breach Scanner – Have I Been Pwned</a></li>
-        </ul>
-
-        <div style="text-align: center;">
-          <a class="donate-link" href="donate.html">💖 Support Us</a>
-        </div>
-      </main>
-    </div>
-
-    <div class="ad-right ad-panel">
-      <a href="#">
-        <img src="https://via.placeholder.com/100x250?text=Ad+2" alt="Ad 2" />
-      </a>
-    </div>
+    <a href="donate.html" class="support-button">💖 Support Us</a>
   </div>
 </body>
 </html>
