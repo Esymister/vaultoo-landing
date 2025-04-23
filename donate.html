@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Support Vaultoo</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f8f8f8;
+      background-color: #f5f7fa;
       margin: 0;
-      padding: 50px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
-    .donation-container {
-      background-color: white;
-      padding: 30px;
+
+    .container {
+      text-align: center;
+      background: white;
+      padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      display: inline-block;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-    .qr-code {
-      margin-top: 20px;
-      max-width: 200px;
-      height: auto;
+
+    h1 {
+      color: #333;
+    }
+
+    .donate-form {
+      margin-top: 1.5rem;
+    }
+
+    .home-link {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+
+    .home-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="donation-container">
+  <div class="container">
     <h1>Support Vaultoo</h1>
-    <p>If you like what we’re building, consider making a donation to keep Vaultoo free for everyone!</p>
+    <p>If you'd like to support our mission of providing secure tools for everyone, please consider donating:</p>
     
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-      <input type="hidden" name="hosted_button_id" value="JKCMQRLBPR83C" />
-      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
-      <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
-    </form>
-
-    <div class="qr-code">
-      <img src="65af3914-61ff-4cea-8fb8-f78ec62dbd10.png" alt="Donate QR Code">
+    <div class="donate-form">
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="JKCMQRLBPR83C" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
+          title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+      </form>
     </div>
+
+    <a class="home-link" href="index.html">← Back to Vaultoo Home</a>
   </div>
 </body>
 </html>
-
