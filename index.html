@@ -7,34 +7,52 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #eef2f7;
       margin: 0;
+      background: #eef2f7;
       padding: 0;
-      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
     }
 
-    header {
-      background-color: #0a3d62;
-      color: white;
-      padding: 1rem;
+    .wrapper {
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      position: relative;
+    }
+
+    .ad-left,
+    .ad-right {
+      width: 120px;
+      padding: 10px;
+      background: #f9f9f9;
       text-align: center;
+      display: none;
     }
 
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
+    .main-content {
+      flex-grow: 1;
       background: white;
+      padding: 2rem;
       border-radius: 8px;
+      margin: 1rem auto;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    .tool-list {
+    header {
+      text-align: center;
+      background-color: #0a3d62;
+      color: white;
+      padding: 1rem;
+      border-radius: 8px 8px 0 0;
+    }
+
+    ul.tool-list {
       list-style: none;
       padding: 0;
     }
 
-    .tool-list li {
+    ul.tool-list li {
       margin: 1rem 0;
     }
 
@@ -54,76 +72,52 @@
       border-radius: 5px;
     }
 
-    /* Left & Right Ad Panels */
-    .ad-panel {
-      position: fixed;
-      top: 0;
-      width: 120px;
-      height: 100%;
-      background-color: #f0f0f0;
-      padding: 10px;
-      text-align: center;
-      overflow-y: auto;
-    }
-
-    .ad-left {
-      left: 0;
-    }
-
-    .ad-right {
-      right: 0;
-    }
-
     .ad-panel img {
       max-width: 100%;
       margin-bottom: 1rem;
     }
 
-    @media screen and (max-width: 768px) {
-      .ad-panel {
-        display: none;
-      }
-      main {
-        margin: 1rem;
+    @media screen and (min-width: 1024px) {
+      .ad-left,
+      .ad-right {
+        display: block;
       }
     }
   </style>
 </head>
 <body>
-  <div class="ad-panel ad-left">
-    <!-- Sample Amazon Ad / Affiliate Links -->
-    <a href="https://www.amazon.com/s?k=security+gadgets" target="_blank">
-      <img src="https://via.placeholder.com/100x250?text=Amazon+Ad+1" alt="Amazon Ad 1" />
-    </a>
-    <a href="#">
-      <img src="https://via.placeholder.com/100x250?text=Ad+Space" alt="Ad Space" />
-    </a>
+  <div class="wrapper">
+    <div class="ad-left ad-panel">
+      <a href="https://www.amazon.com/s?k=cybersecurity+tools" target="_blank">
+        <img src="https://via.placeholder.com/100x250?text=Ad+1" alt="Ad 1" />
+      </a>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <h1>Vaultoo</h1>
+        <p>Your free all-in-one online security toolkit</p>
+      </header>
+
+      <main>
+        <h2 style="text-align: center;">Featured Tools</h2>
+        <ul class="tool-list">
+          <li><a href="https://protonvpn.com/" target="_blank">Free VPN – ProtonVPN</a></li>
+          <li><a href="https://www.lastpass.com/" target="_blank">Password Manager – LastPass</a></li>
+          <li><a href="https://haveibeenpwned.com/" target="_blank">Email Breach Scanner – Have I Been Pwned</a></li>
+        </ul>
+
+        <div style="text-align: center;">
+          <a class="donate-link" href="donate.html">💖 Support Us</a>
+        </div>
+      </main>
+    </div>
+
+    <div class="ad-right ad-panel">
+      <a href="#">
+        <img src="https://via.placeholder.com/100x250?text=Ad+2" alt="Ad 2" />
+      </a>
+    </div>
   </div>
-
-  <div class="ad-panel ad-right">
-    <!-- Future Ads or Partner Videos -->
-    <a href="#">
-      <img src="https://via.placeholder.com/100x250?text=Ad+2" alt="Ad 2" />
-    </a>
-    <a href="#">
-      <img src="https://via.placeholder.com/100x250?text=Ad+3" alt="Ad 3" />
-    </a>
-  </div>
-
-  <header>
-    <h1>Vaultoo</h1>
-    <p>Your free all-in-one online security toolkit</p>
-  </header>
-
-  <main>
-    <h2>Featured Tools</h2>
-    <ul class="tool-list">
-      <li><a href="https://protonvpn.com/" target="_blank">Free VPN – ProtonVPN</a></li>
-      <li><a href="https://www.lastpass.com/" target="_blank">Password Manager – LastPass</a></li>
-      <li><a href="https://haveibeenpwned.com/" target="_blank">Email Breach Scanner – Have I Been Pwned</a></li>
-    </ul>
-
-    <a class="donate-link" href="donate.html">💖 Support Us</a>
-  </main>
 </body>
 </html>
