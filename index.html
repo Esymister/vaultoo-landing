@@ -1,96 +1,103 @@
+<!-- VLT-004: Vaultoo Landing Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vaultoo - Home</title>
+  <title>Vaultoo | Protect 365</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #e0f7fa, #ffffff);
-      color: #333;
+      background: linear-gradient(120deg, #004e92, #000428);
+      color: #fff;
     }
-
     nav {
-      background-color: #00796b;
-      padding: 1em;
-      display: flex;
-      justify-content: center;
-      gap: 2em;
+      background-color: #111;
+      padding: 1rem;
+      text-align: center;
     }
-
     nav a {
-      color: white;
+      color: #fff;
+      margin: 0 1.5rem;
       text-decoration: none;
       font-weight: bold;
     }
-
+    nav a:hover {
+      text-decoration: underline;
+    }
     .container {
-      display: flex;
-      margin: 20px;
-    }
-
-    .ad-box {
-      width: 20%;
-      background-color: #f5f5f5;
-      padding: 1em;
-      border-radius: 10px;
-      min-height: 300px;
       text-align: center;
+      max-width: 960px;
+      margin: auto;
+      padding: 3rem 1rem;
     }
-
-    .main-content {
-      width: 60%;
-      padding: 1em;
-      text-align: center;
-    }
-
     h1 {
-      color: #004d40;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
     }
-
-    .tool-box {
-      border: 2px dashed #80cbc4;
-      padding: 2em;
-      margin: 2em 0;
-      border-radius: 15px;
-      background-color: #ffffffcc;
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
     }
-
-    footer {
+    .tools {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .tool {
+      background: #222;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin: 1rem;
+      flex: 1 1 200px;
+      max-width: 280px;
+      transition: 0.3s;
+    }
+    .tool:hover {
+      background: #333;
+    }
+    .tool h3 {
+      color: #00d9ff;
+      margin-bottom: 0.5rem;
+    }
+    .footer {
       text-align: center;
-      padding: 1em;
-      background-color: #eeeeee;
-      margin-top: 2em;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #000;
     }
   </style>
 </head>
 <body>
-
   <nav>
     <a href="index.html">Home</a>
-    <a href="donate.html">Support Us</a>
-    <a href="mailto:youremail@example.com">Contact Us</a>
+    <a href="donate.html">Donate</a>
+    <a href="#contact">Contact Us</a>
   </nav>
 
   <div class="container">
-    <div class="ad-box">Your Ad Here</div>
+    <h1>Welcome to Vaultoo</h1>
+    <p>Protect your digital life with free tools that matter. Safe. Easy. Powerful.</p>
 
-    <div class="main-content">
-      <h1>Welcome to Vaultoo</h1>
-      <p>Protect your digital life with free tools — centralized in one powerful dashboard.</p>
-
-      <div class="tool-box">
-        <p>🔧 Tools will be added here (VPN, Password Manager, Email Scanner...)</p>
+    <div class="tools">
+      <div class="tool">
+        <h3>Free VPN</h3>
+        <p>Secure your connection anywhere in the world.</p>
+      </div>
+      <div class="tool">
+        <h3>Password Manager</h3>
+        <p>Store and organize your passwords safely.</p>
+      </div>
+      <div class="tool">
+        <h3>Email Scanner</h3>
+        <p>Scan your inbox for threats and scams.</p>
       </div>
     </div>
-
-    <div class="ad-box">Your Ad Here</div>
   </div>
 
-  <footer>
+  <div class="footer">
     &copy; 2025 Vaultoo. All rights reserved.
-  </footer>
+  </div>
 </body>
 </html>
