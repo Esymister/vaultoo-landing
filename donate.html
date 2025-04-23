@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support Vaultoo</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f7fa;
       margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-
-    .container {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e8f5e9, #ffffff);
       text-align: center;
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
       color: #333;
     }
 
-    .donate-form {
-      margin-top: 1.5rem;
+    nav {
+      background-color: #00796b;
+      padding: 1em;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
     }
 
-    .home-link {
-      display: inline-block;
-      margin-top: 2rem;
+    nav a {
+      color: white;
       text-decoration: none;
-      color: #007BFF;
       font-weight: bold;
     }
 
-    .home-link:hover {
-      text-decoration: underline;
+    .content {
+      margin-top: 3em;
+    }
+
+    h1 {
+      color: #2e7d32;
+    }
+
+    .paypal-button {
+      margin-top: 2em;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="donate.html">Support Us</a>
+    <a href="mailto:youremail@example.com">Contact Us</a>
+  </nav>
+
+  <div class="content">
     <h1>Support Vaultoo</h1>
-    <p>If you'd like to support our mission of providing secure tools for everyone, please consider donating:</p>
-    
-    <div class="donate-form">
+    <p>Your support helps keep this platform free and evolving. Thank you!</p>
+
+    <div class="paypal-button">
       <form action="https://www.paypal.com/donate" method="post" target="_top">
         <input type="hidden" name="hosted_button_id" value="JKCMQRLBPR83C" />
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
@@ -59,8 +60,7 @@
         <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
       </form>
     </div>
-
-    <a class="home-link" href="index.html">← Back to Vaultoo Home</a>
   </div>
+
 </body>
 </html>
