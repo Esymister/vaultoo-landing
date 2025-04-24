@@ -40,26 +40,29 @@
       font-size: 1.2rem;
       margin-bottom: 2rem;
     }
-    .footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      background: #000;
-    }
     .ads-container {
       display: flex;
-      justify-content: space-around;
-      padding: 2rem;
+      justify-content: center;
+      align-items: flex-start;
       flex-wrap: wrap;
+      padding: 2rem 1rem;
       gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
     .ad-box {
-      background-color: #111;
-      border-radius: 10px;
+      background-color: #1c1c1c;
+      border: 2px solid #2c2c2c;
+      border-radius: 15px;
       padding: 1rem;
       width: 280px;
       text-align: center;
-      box-shadow: 0 0 12px rgba(0,0,0,0.4);
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .ad-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(0,0,0,0.8);
     }
     .ad-box img {
       width: 100%;
@@ -69,6 +72,12 @@
       color: #fff;
       margin-top: 0.5rem;
       font-size: 1rem;
+    }
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #000;
     }
   </style>
 </head>
