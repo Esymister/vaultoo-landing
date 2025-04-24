@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vaultoo | Protect 365</title>
+  <title>Welcome to Vaultoo</title>
   <style>
     body {
       margin: 0;
@@ -28,44 +28,47 @@
     }
     .container {
       text-align: center;
-      max-width: 960px;
+      max-width: 720px;
       margin: auto;
       padding: 3rem 1rem;
     }
     h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
     p {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       margin-bottom: 2rem;
-    }
-    .tools {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-    .tool {
-      background: #222;
-      padding: 1.5rem;
-      border-radius: 12px;
-      margin: 1rem;
-      flex: 1 1 200px;
-      max-width: 280px;
-      transition: 0.3s;
-    }
-    .tool:hover {
-      background: #333;
-    }
-    .tool h3 {
-      color: #00d9ff;
-      margin-bottom: 0.5rem;
     }
     .footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
       background: #000;
+    }
+    .ads-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .ad-box {
+      background-color: #111;
+      border-radius: 10px;
+      padding: 1rem;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    }
+    .ad-box img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .ad-box p {
+      color: #fff;
+      margin-top: 0.5rem;
+      font-size: 1rem;
     }
   </style>
 </head>
@@ -78,21 +81,21 @@
 
   <div class="container">
     <h1>Welcome to Vaultoo</h1>
-    <p>Protect your digital life with free tools that matter. Safe. Easy. Powerful.</p>
+    <p>Vaultoo is your digital guardian, offering free tools to protect your privacy, secure your identity, and stay safe online. We believe in a world where digital safety is accessible to everyone.</p>
+  </div>
 
-    <div class="tools">
-      <div class="tool">
-        <h3>Free VPN</h3>
-        <p>Secure your connection anywhere in the world.</p>
-      </div>
-      <div class="tool">
-        <h3>Password Manager</h3>
-        <p>Store and organize your passwords safely.</p>
-      </div>
-      <div class="tool">
-        <h3>Email Scanner</h3>
-        <p>Scan your inbox for threats and scams.</p>
-      </div>
+  <div class="ads-container">
+    <div class="ad-box">
+      <a href="https://www.amazon.com/dp/B08N5WRWNW?tag=vaultoo-tools-20" target="_blank">
+        <img src="https://m.media-amazon.com/images/I/61ZgD8lNlzL._AC_SL1000_.jpg" alt="Cybersecurity Book" />
+        <p>Top-Rated Cybersecurity Guide</p>
+      </a>
+    </div>
+    <div class="ad-box">
+      <a href="https://www.amazon.com/dp/B07YMNLXL5?tag=vaultoo-tools-20" target="_blank">
+        <img src="https://m.media-amazon.com/images/I/61wzr9rd2cL._AC_SL1500_.jpg" alt="TP-Link VPN Router" />
+        <p>TP-Link SafeStream VPN Router</p>
+      </a>
     </div>
   </div>
 
